@@ -38,7 +38,7 @@ async def on_ready():
 
 
 @bot.command(pass_context = True)
-async def setup(interaction: nextcord.Interaction):
+async def StartGen(interaction: nextcord.Interaction):
     await interaction.message.delete()
     if interaction.author.name == ADMIN:
         embed = nextcord.Embed(
